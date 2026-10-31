@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YummiBot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="nav" aria-label="Разделы сайта">
+        <div class="container">
+            <a href="#about">О боте</a>
+            <a href="#program">Программа</a>
+            <a href="#signup">Записаться</a>
+        </div>
+    </nav>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>🚀 YummiBot</h1>
+            <p class="subtitle">Находи любимые блюда и их рецепты</p>
+            <a class="bot-link" href="https://vk.com/im?sel=-242799238" target="_blank" rel="noopener">Открыть бота ВКонтакте</a>
+        </div>
+    </header>
+
+    <!-- О Боте -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О боте YummiBot по поиску блюд</h2>
+            <p>Бот по поиску блюд по названию и выдает информацию о блюде а также его рецепт и также можно добавлять блюда которые понравились в избранное</p>
+            
+            <div class="benefits">
+                <div class="benefit-card">
+                    <h3>🎓 поиск блюд</h3>
+                    <p>в боте можно найти рецепт любимого блюда, можно посмотреть историб блюд которые ты искал, можно добавить любимые блюда в израбнное</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💼 Портфолио</h3>
+                    <p>Работающий бот, которым можно гордиться</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🤝 Команда</h3>
+                    <p>учимся находить блюда и готовить их</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа -->
+    <section id="program" class="section">
+        <div class="container">
+            <h2>Программа</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">21 октября</div>
+                    <h3>Анатомия бота и первые шаги</h3>
+                    <p>Создаём первого бота ВКонтакте</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">28 октября</div>
+                    <h3>Сценарии и интерактив</h3>
+                    <p>Учим бота работать с кнопками</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">11 ноября</div>
+                    <h3>Учим бота думать</h3>
+                    <p>Подключаем API и базы данных</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">18 ноября</div>
+                    <h3>Хакатон: Командная сборка</h3>
+                    <p>Создаём свои проекты</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">25 ноября</div>
+                    <h3>Отладка и тестирование</h3>
+                    <p>Доводим проекты до ума</p>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="date">2 декабря</div>
+                    <h3>🏆 Demo Day</h3>
+                    <p>Защита проектов перед жюри</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Запись -->
+    <section id="signup" class="section">
+        <div class="container">
+            <h2>Записаться на следующий поток</h2>
+            <p>Оставь заявку, и мы свяжемся с тобой в ВКонтакте</p>
+            <form id="signup-form" onsubmit="submitForm(event)">
+                <input type="text" id="name" placeholder="Твоё имя" required>
+                <input type="text" id="grade" placeholder="Класс (8 или 9)" required>
+                <input type="tel" id="phone" placeholder="Телефон" required>
+                <button type="submit">Записаться</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <footer>
+        <div class="container">
+            <h3>Контакты</h3>
+            <p>📍 11 корпус, аудитория 11-305</p>
+            <p>📧 <a href="mailto:fadeev@college.ru">fadeev@college.ru</a></p>
+            <p>📱 <a href="https://vk.com/it_navigator" target="_blank">ВКонтакте</a></p>
+            <p class="copyright">© 2026 Институт СПО и ДП. Проектная школа «IT-Навигатор»</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
